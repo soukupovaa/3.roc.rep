@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+.tabule {
+    background-color: rgb(7, 71, 7);
+    display: block;
+    border: 10px solid rgb(177, 100, 0);
+    padding: 20px;
+    width: 600px;
+    height: 350px;
+    box-sizing: border-box;
+}
+.text{
+    color: white;
+    font-family: Caveat;
+font-size: 19px;
+
+}
+.images{
+    position: absolute;
+    height: 250px;
+ margin-top: 180px;
+ margin-left: 200px;
+
+}

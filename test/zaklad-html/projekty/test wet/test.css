@@ -1,0 +1,124 @@
+
+body {
+    background-color: #FFEBCD
+
+}
+
+.nadpis{
+color: black;
+font-size: 4em;
+text-align: center;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+margin-top: 100px;
+margin-bottom: 100px;
+}
+
+.blok1{
+    border: solid black;
+    background-color:  #B9E6FF;
+    display: block;
+    padding: 20px;
+    width: 250px;
+    height: 300px;
+    box-sizing: border-box;
+    border-radius: 6%;
+    display: inline-block;
+    margin-top: 100px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.text{
+    text-align: center;
+    font-size: 1.3em;
+}
+.text1{
+    font-size: 1.em;
+}
+.text3{
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.blok2{
+    border: solid black;
+    background-color:  #B9E6FF;
+    display: block;
+    padding: 20px;
+    width: 250px;
+    height: 300px;
+    box-sizing: border-box;
+    border-radius: 6%;
+    display: inline-block;
+    
+}
+
+.blok3{
+    border: solid black;
+    background-color: #B9E6FF;
+    display: block;
+    padding: 20px;
+    width: 250px;
+    height: 300px;
+    box-sizing: border-box;
+    border-radius: 6%;
+    display: inline-block;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+.kolecla{
+    position: absolute;
+}
+.kolo1{
+    background-color: red;
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    display: inline-block;
+    margin: 5px -5px 0px 5px;
+    color:  #B9E6FF;
+    border: solid black;
+}
+.kolo2{
+    background-color: red;
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    display: inline-block;
+    margin: 5px -5px 0px 5px;
+    color:  #B9E6FF;
+    border: solid black;
+}
+.kolo3{
+    background-color: red;
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    display: inline-block;
+    margin: 5px -5px 0px 5px;
+    color:  #B9E6FF;
+    border: solid black;
+}
+.kolo4{
+    background-color: red;
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    display: inline-block;
+    margin: 5px -5px 0px 5px;
+    color:  #B9E6FF;
+    border: solid black;
+    
+}
+.button{
+    border-radius: 30%;
+    border-color:solid black;
+    background-color: #FCDCA9;
+    position: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 100px;
+}
+

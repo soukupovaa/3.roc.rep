@@ -1,0 +1,118 @@
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Test</title>
+
+        <style>
+            body {
+                font-family: monospace;
+                font-size: 32px;
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 35px;
+            }
+            .obrazek {
+                width: 50px;
+                height: 5%;
+                width: auto;
+                position: absolute;
+                right: 50px;
+            }
+            .tlacitko {
+                padding: 10px;
+                font-size: 20px;
+                margin: 10px;
+            }
+
+            .platno {
+                border: 2px solid black;
+                width: 800px;
+                height: 500px;
+                display: inline-block;
+                right: 550px;
+            }
+
+            .ctverec {
+                height: 70px;
+                width: 70px;
+                position: relative;
+                color: #eea41b;
+                border: solid black;
+                display: none;
+            }
+
+            .kolecko {
+                height: 70px;
+                width: 70px;
+                border-radius: 100%;
+                position: absolute;
+                color: #2598d6;
+                border: solid black;
+                display: none;
+            }
+
+            .text-box {
+                display: inline;
+            }
+        </style>
+    </head>
+    <body>
+        <img class="obrazek" id="tlacitko" src="hide.png" alt="" />
+
+        <div id="den">
+            <h1>Picasso</h1>
+
+            <div class="platno"></div>
+            <div class="kolecko"></div>
+            <div class="ctverec"></div>
+            <div class="text-box"></div>
+
+            <button id="tlacitkoText" class="tlacitko">Text</button><br />
+            <button id="tlacitkoKolecka" class="tlacitko">Kolečka</button><br />
+            <button id="tlacitkoCtverce" class="tlacitko">Čtverečky</button>
+        </div>
+
+        <script>
+            const platno = document.querySelector(".platno")
+            const kolecko = document.querySelector(".kolecko")
+            const ctverec = document.querySelector(".ctverec")
+            const textbox = document.querySelector(".text-box")
+            const den = document.querySelector("#den")
+
+            const tlacitkoCtverce = document.querySelector("#tlacitkoCtverce")
+            const tlacitkoKolecka = document.querySelector("#tlacitkoKolecka")
+            const tlacitkoText = document.querySelector("#tlacitkoText")
+
+            const tlacitko = document.querySelector("#tlacitko")
+
+            const wrapper = document.querySelector(".wrappper")
+
+            tlacitkoCtverce.addEventListener("click", kresliCtverec)
+            tlacitkoKolecka.addEventListener("click", kresliKolecko)
+            tlacitkoText.addEventListener("click", kresliText)
+            tlacitko.addEventListener("click", schovto)
+
+            function kresliCtverec() {
+                ctverec.style.display = "block"
+                ctverec.style.display = "inline-block"
+            }
+
+            function kresliKolecko() {
+                kolecko.style.display = "block"
+            }
+
+            function kresliText() {
+                let li = document.createElement("li")
+                li.appendChild(document.createTextNode("už na to nemám"))
+                ul.appendChild(li)
+            }
+
+            function schovto() {
+                den.style.display = "none"
+            }
+        </script>
+    </body>
+</html>

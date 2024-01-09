@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+            }
+            .koule1 {
+                height: 100px;
+                width: 100px;
+                margin-top: 30px;
+                margin-right: 20px;
+                border-radius: 100%;
+                background-color: #ff1e00;
+
+                animation: zametani 1.2s ease-in forwards infinite alternate;
+            }
+            .koule2 {
+                height: 100px;
+                width: 100px;
+                margin-top: 50px;
+                margin-right: 20px;
+                margin-left: 20px;
+                border-radius: 100%;
+                background-color: #ffee00;
+
+                animation: zametani 1.3s ease-in forwards infinite alternate;
+            }
+            .koule3 {
+                height: 100px;
+                width: 100px;
+                margin-top: 40px;
+                margin-right: 20px;
+                margin-left: 20px;
+                border-radius: 100%;
+                background-color: #00d9ff;
+
+                animation: zametani 1.1s ease-in forwards infinite alternate;
+            }
+            .koule4 {
+                height: 100px;
+                width: 100px;
+                margin-top: 60px;
+                margin-right: 20px;
+                margin-left: 20px;
+                border-radius: 100%;
+                background-color: #b83cbc;
+
+                animation: zametani 1.4s ease-in forwards infinite alternate;
+            }
+            .koule5 {
+                height: 100px;
+                width: 100px;
+                margin-top: 20px;
+                margin-left: 20px;
+                border-radius: 100%;
+                background-color: #74ff03;
+
+                animation: zametani 1s ease-in forwards infinite alternate;
+            }
+            .zem {
+                width: 1000px;
+                translate: 0px 761px;
+                background-color: black;
+                border: 2px solid;
+                border-color: black;
+                position: absolute;
+            }
+
+            @keyframes zametani {
+                100% {
+                    translate: 0px 700px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="koule1"></div>
+            <div class="koule2"></div>
+            <div class="koule3"></div>
+            <div class="koule4"></div>
+            <div class="koule5"></div>
+            <div class="zem"></div>
+        </div>
+    </body>
+</html>

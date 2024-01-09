@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.red {
+    background-color: rgb(255, 0, 0);
+    /* align-self: flex-start; */
+    
+}
+.blue {
+    background-color: #0000ff;
+    /* order: 2;  mění se pořadí ale musí se vypnot align*/
+  
+   
+}
+.green {
+    background-color: #09ff00;
+    /* align-self: flex-end; */
+    /* nastavení jen pro jeden z prvků  */
+    /* align se tyka vedlejší osy justify se tyka hlavní osy */
+   
+}
+.cont {
+    width: 70px;
+    color: white;
+    height: 70px;
+}
+.main-cont {
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    /* na zarovnaní prvků na stránce v řadě nebo ve sloupci ale ne spolu 
+    ale od toho je grid ovšem ten je složitější zařazuje v řadě a sloupci najednou  */
+    border: 2px solid black;
+    justify-content: center; 
+    /* zarovnává prvky na hlavní osu 
+    space around je dvojnasob velikost no každopadne mužes upravovat mezery a tak pomocí mtoho space */
+    align-items: center;
+    /* zarovnává prvky na vedlejší ose */
+}
+
+.red:hover { 
+background-color: blueviolet;
+width: 100px;
+height: 100px;
+/* když přejedu myší bude se mměnit */
+}
+.main-cont div {
+color: black;
+}
+/* .main-cont>:nth-child(2) {
+    color: white;
+} */
+.cont:nth-child(2) {
+    color: white;
+}
+.blue:hover::after {
+    content: " text";
+    color: white;
+}

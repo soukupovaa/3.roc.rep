@@ -1,0 +1,91 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="prazdniny.js" defer></script>
+    </head>
+    <body>
+        <div id="den"> 
+            <h1 class = "nadpis" id="nadpis">Dneska je ale krásný den panečku</h1>
+            <br />
+            <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc auctor. Nunc tincidunt ante vitae massa. Aliquam ante. Pellentesque sapien. Aenean vel massa quis mauris vehicula lacinia. Aliquam erat volutpat. In convallis. Maecenas libero. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce nibh. Praesent dapibus. Etiam commodo dui eget wisi. Etiam dictum tincidunt diam. Phasellus rhoncus.</h3>
+            <button>klik</button>
+    
+            <img
+            src = " https://th.bing.com/th/id/OIP.q5YQ0RHDkBem-I1tuPTrLwHaHa?pid=ImgDet&rs=1"
+            alt=""
+            id="tlacitko" />
+        </div>
+       
+<div id="noc">
+    <h1 class = "nadpis" id="nadpis2">Dneska je ale krásný večer panečku</h1>
+            <br />
+            <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc auctor. Nunc tincidunt ante vitae massa. Aliquam ante. Pellentesque sapien. Aenean vel massa quis mauris vehicula lacinia. Aliquam erat volutpat. In convallis. Maecenas libero. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce nibh. Praesent dapibus. Etiam commodo dui eget wisi. Etiam dictum tincidunt diam. Phasellus rhoncus.</h3>
+            <button>klik</button>
+
+            <img
+            src = " https://th.bing.com/th/id/OIP.KTi90dboHOSpzOBYOkEm-AHaHY?pid=ImgDet&rs=1 "
+            alt=""
+            id="tlacitko2" />
+            
+</div>
+       
+
+        <script>
+            const  den = document.querySelector("#den"),
+                noc = document.querySelector("#noc"),
+                tlacitko = document.querySelector("#tlacitko"),
+                tlacitko2 = document.querySelector("#tlacitko2"),
+                body = document.querySelector("body"),
+                nadpis = document.querySelector("#nadpis"),
+                nadpis2 = document.querySelector("#nadpis2")
+                
+
+
+                body.style.backgroundColor = "#ff72a1"
+                nadpis.style.color = "#727272"
+
+            noc.style.display="none"
+
+            tlacitko.addEventListener("click", zmenPozadi)
+            tlacitko2.addEventListener("click", zmenPozadi2)
+
+        
+
+            function zmenPozadi() {
+                body.style.backgroundColor = "#727272"
+                nadpis2.style.color = "#ff72a1"
+
+                den.style.display="none"
+                noc.style.display="block"
+
+            }
+
+            function zmenPozadi2() {
+                body.style.backgroundColor = "#ff72a1"
+                nadpis.style.color = "#727272"
+
+                den.style.display="block"
+                noc.style.display="none"
+
+            }
+
+
+
+
+        </script>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap");
+
+            @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Montserrat:ital,wght@1,500&display=swap");
+            * {
+                font-family: "Secular One", sans-serif;
+
+                text-align: center;
+
+
+            }
+        </style>
+    </body>
+</html>

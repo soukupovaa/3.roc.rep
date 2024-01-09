@@ -1,0 +1,36 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="prazdniny.js" defer></script>
+    </head>
+    <body>
+        <h1 id="nadpis">PRÁZDNINY</h1>
+        <br />
+        <h2>bahaha</h2>
+        <img src="1sib.png" alt="" id="sib1" /><br />
+        <button id="tlacitko">klik</button>
+
+        <script>
+            const nadpis = document.querySelector("#nadpis"),
+                tlacitko = document.querySelector("#tlacitko"),
+                body = document.querySelector("body")
+
+            body.style.backgroundColor = "pink"
+            tlacitko.addEventListener("click", zmenPozadi)
+
+            function zmenPozadi() {
+                body.style.backgroundColor = "green"
+            }
+        </script>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Secular+One&display=swap");
+            * {
+                font-family: "Secular One", sans-serif;
+
+                text-align: center;
+            }
+        </style>
+    </body>
+</html>

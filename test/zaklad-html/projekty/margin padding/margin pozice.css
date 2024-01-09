@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.red {
+    background-color: rgb(255, 86, 86);
+    color: white;
+}
+.blue {
+    background-color: #5151ff;
+    color: white;
+    display: none;
+}
+.green {
+    background-color: #65e460;
+    color: white;
+    display: block;
+    width: 100px;
+    height: 50px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: 50px;
+}
+.spagety {
+    background-color: wheat;
+    display: block;
+    border: 5px solid black;
+    padding: 50px;
+    width: 200px;
+    height: 150px;
+    box-sizing: border-box;
+}
+.kecup {
+    background-color: tomato;
+    display: inline-block;
+    width: 75%;
+    position: absolute;
+}
+.slunicko {
+    width: 250px;
+    height: 3000px;
+    background-color: yellow;
+    position: relative;
+    /* neignorují jeho prostor narozdíl od absolute kde se může překrýt */
+}
+
+.tele {
+    width: 200px;
+    height: 100px;
+}
+.tinky-winky {
+    background-color: blueviolet;
+    position: sticky;
+    left: 30px;
+    top: 0px;
+align-content: center;
+}
+
+.dipsy {
+background-color: greenyellow;
+}
+
+.po {
+    background-color: crimson;
+}

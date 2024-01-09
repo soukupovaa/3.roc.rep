@@ -1,0 +1,34 @@
+.logo {
+    margin: 200px 0px 0px 200px;
+}
+.red {
+    background-color: tomato;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+}
+.green {
+    background-color:yellowgreen;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+}
+.druha{
+    margin: 0px 0px 0px 200px;
+}
+.blue {
+    background-color: rgb(104, 194, 250);
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+}
+.yellow{
+    background-color: rgb(255, 217, 0);
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+}

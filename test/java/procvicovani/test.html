@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="testP.js" defer></script>
+</head>
+<body>
+    <h1 id="nadpis">zadej slovo</h1>
+    <input type="text" id="input">
+    <button id="tlacitko">klik a přidej slovo </button>
+    <p type="pod1" id="out">seznam slov</p>
+
+    <button id="tlacitko2">klik pro popelku </button>
+    <p type="pod2" id="out2">seznam krátkých slov</p>
+    <p type="pod3" id="out3">seznam dlouhých slov</p>
+
+
+
+    <h1 id="nadpis2">jak moc mě to bavilo?</h1>
+    <input type="text2" id="input">
+    <button id="tlacitko3">hodnocení</button>
+
+    <script>
+const nadpis = document.querySelector("#nadpis"),
+    text = document.querySelector("#input"),
+    tlacitko = document.querySelector("#tlacitko"),
+    tlacitko2 = document.querySelector("#tlacitko2"),
+    pod1 = document.querySelector("#out"),
+    pod2 = document.querySelector("#out2"),
+    pod3 = document.querySelector("#out3")
+
+    tlacitko.addEventListener("click", zadejSlovo)
+    tlacitko2.addEventListener("click", roztridSlova)
+    
+const nadpis2 = document.querySelector("#nadpis2"),
+    text2 = document.querySelector("#input2"),
+    tlacitko3 = document.querySelector("#tlacitko3")
+
+    tlacitko3.addEventListener("click", hodnoceni)
+
+    const odpoved = []
+    odpoved.push(text.value)
+
+function zadejSlovo() {
+
+    let slovo = text.value;
+
+pod1.innerText = "";
+for (let i = 0; i < odpoved.length; i++) {
+    pod1.innerText += odpoved[i] = "" ;
+    }
+}
+
+function roztridSlova() {
+    let slovo = delkaSlova
+    let delkaSlova = slovo.length
+    let input = delkaSlova
+
+    if ( input > 5 ) {
+        nadpis.innerText = slovo
+    }
+    else if ( input < 4 ) {
+         nadpis.innerText = slovo
+    }
+   
+    }
+    
+function hodnoceni(cislo) {
+    let srdicko = [];
+    const pocet = String(cislo).split("")
+    pocet.forEach (pocet =>)  
+    {
+let srdicko = ""
+for (let i = 0; i< pocet; i++) {
+srdicko += "❤"
+
+    }
+srdicka.push(srdicko)
+}}
+    
+    
+
+    </script>
+</body>
+</html>

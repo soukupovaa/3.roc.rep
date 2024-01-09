@@ -1,0 +1,30 @@
+.images {
+    height: 600px;
+    width: auto;
+    border: 5px solid rgb(198, 144, 230);
+    border-radius: 5%;
+} 
+
+.headings {
+    color: rgb(132, 155, 197);
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(102, 77, 102);
+}
+
+.button {
+    background-color: powderblue;
+    border-color:rgb(98, 9, 182);
+}
+
+#comment-input {
+    height: 150px;
+    width: 300px;
+    resize: none;
+}
+
+body {
+    background-color: rgb(233, 225, 255);
+}

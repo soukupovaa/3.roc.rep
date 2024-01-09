@@ -1,0 +1,104 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="prazdniny.js" defer></script>
+    </head>
+    <body>
+        <div class="div">
+            <h1 id="nadpis">PRÁZDNINY</h1>
+            <h1 id="nadpis2">ŠKOLA</h1>
+            <br />
+
+            <h2 id="text">bahaha</h2>
+            <h2 id="text2">ach jo tosnad ne</h2>
+
+            <img src="1sib.png" alt="" id="sib1" />
+            <img src="8sib.png" alt="" id="sib8" />
+        </div>
+        <img
+            src="https://emojiisland.com/cdn/shop/products/Emoji_Icon_-_Sunglasses_cool_emoji_large.png?v=1571606093"
+            alt=""
+            id="tlacitko"
+        />
+        <img
+            src="https://cdn.pixabay.com/photo/2020/12/27/20/24/emoji-5865207_1280.png"
+            alt=""
+            id="tlacitko2"
+        />
+
+        <br />
+
+        <script>
+            const nadpis = document.querySelector("#nadpis"),
+                nadpis2 = document.querySelector("#nadpis2"),
+                text = document.querySelector("#text"),
+                text2 = document.querySelector("#text2"),
+                tlacitko = document.querySelector("#tlacitko"),
+                body = document.querySelector("body"),
+                sib1 = document.querySelector("#sib1"),
+                sib8 = document.querySelector("#sib8"),
+                smajlik = document.querySelector("#tlacitko"),
+                smajlik2 = document.querySelector("#tlacitko2")
+
+            nadpis2.style.display = "none"
+            text2.style.display = "none"
+            sib8.style.display = "none"
+            smajlik2.style.display = "none"
+
+            tlacitko.addEventListener("click", zmenPozadi)
+            tlacitko.addEventListener("click", zmenNadpis)
+            tlacitko.addEventListener("click", zmenText)
+            tlacitko.addEventListener("click", zmenObraz)
+            tlacitko.addEventListener("click", zmenSmajlik)
+
+            function zmenPozadi() {
+                body.style.backgroundColor = "green"
+            }
+            function zmenNadpis() {
+                nadpis2.style.display = "block"
+                nadpis.style.display = "none"
+            }
+            function zmenText() {
+                text2.style.display = "block"
+                text.style.display = "none"
+            }
+
+            function zmenObraz() {
+                sib8.style.display = "block"
+                sib1.style.display = "none"
+            }
+
+            function zmenSmajlik() {
+                smajlik2.style.display = "block"
+                smajlik.style.display = "none"
+            }
+        </script>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Secular+One&display=swap");
+            * {
+                font-family: "Secular One", sans-serif;
+
+                text-align: center;
+            }
+
+            .div {
+                display: flex;
+            }
+
+            #tlacitko {
+                height: 5%;
+                width: 5%;
+
+                position: absolute;
+            }
+
+            #tlacitko2 {
+                height: 5%;
+                width: 5%;
+                position: absolute;
+            }
+        </style>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+
+    <h1 id="nadpis">přidej něco</h1>
+    <input type="text" id="input">
+    <button id="tlacitko">klik </button>
+    <p id="out"></p>
+
+</head>
+<body>
+    
+
+
+    <script>
+
+        const seznam = ["jedna", "dva", "tri","ctyri"]
+        console.log(seznam)
+        seznam.push("pet", "sest")
+        seznam.pop()//odebira posledni hodnotu z array
+        seznam.shift()// odebira prvni hodnotu z array
+        seznam.splice(3, 1) //1 kolik hodnot odebrat 3 od jakeho indexu
+        for (let i = 0; i < seznam.length; i++) {
+            console.log(seznam[i])
+        }
+
+
+    </script>
+</body>
+</html>
